@@ -1,3 +1,4 @@
+# coding:utf-8
 """
 Django settings for doit project.
 
@@ -39,6 +40,7 @@ INSTALLED_APPS = (
 
     'xadmin',
     'crispy_forms',
+    'web',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -86,3 +88,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = '/static/'
 # STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
+# 中文
+RESTRUCTUREDTEXT_FILTER_SETTINGS = {
+    'doctitle_xform': False,
+}
