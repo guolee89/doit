@@ -1,0 +1,18 @@
+{% extends "doit/base.html" %}
+
+{% block title %} | {% endblock %}
+{% block desc %}{%  endblock %}
+{% block keywords %}{% endblock %}
+
+{% block extend_style %} 
+{% endblock %}
+
+{% block main %}
+	<div>
+		<p>{{ article_detail.id }}</p>
+		<p>{{ article_detail.title }}</p>
+		<p>{{ article_detail.content }}</p>
+		<p>{{ article_detail.created_at }}</p>
+
+	</div>
+{% endblock %}
